@@ -2,9 +2,6 @@
 ## Overview
 Nearby Restaurants Finder is an Android app that helps users discover restaurants in their vicinity. Using the Google Places API, the app fetches nearby restaurant data and displays it to the user.
 
-## Screenshots
-Include screenshots of the app here to showcase its user interface and functionality.
-
 ## Technologies Used
 - Android SDK
 - Kotlin programming language
