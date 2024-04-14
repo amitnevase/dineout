@@ -1,0 +1,149 @@
+<!-- activity_restaurant_details.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header Section -->
+        <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_restaurant_placeholder" />
+
+        <TextView
+            android:id="@+id/restaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Restaurant Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ratingText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:gravity="start"
+                style="@style/MediumBoldText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/openStatusText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet dui tortor."
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/getDirectionsButton"
+            style="@style/MediumBoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Get Directions" />
+
+    </LinearLayout>
+</ScrollView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:padding="16dp">-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/restaurantImageView"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:scaleType="centerCrop"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/nameTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        style="@style/MediumBoldText"-->
+    <!--        android:textAppearance="?android:textAppearanceLarge"-->
+    <!--        android:layout_below="@id/restaurantImageView"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="8dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/ratingTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/nameTextView"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="8dp"/>-->
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/vicinityTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        style="@style/SmallText"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/ratingTextView"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginBottom="16dp"/>-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/openStatusTextView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="16sp"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_below="@id/vicinityTextView"-->
+    <!--        style="@style/MediumText"-->
+    <!--        android:layout_marginBottom="4dp"/>-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/navigationButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Navigate to Restaurant"-->
+    <!--        style="@style/SmallLightText"-->
+    <!--        android:layout_below="@id/openStatusTextView"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="16dp"/>-->
+
+    <!--</RelativeLayout>-->

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Dineout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rating">"Rating: "</string>
+    <string name="address">Address: %1$s</string>
+    <string name="open">Open Now</string>
+    <string name="closed">Closed Now</string>
+    <string name="request_problem_title">Error</string>
+    <string name="request_problem_subtitle">We\'re having trouble connecting to the server!</string>
+</resources>
